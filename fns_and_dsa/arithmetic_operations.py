@@ -1,4 +1,7 @@
-def perform_operation(operation: str, num1: float, num2:float):
+def perform_operation(num1, num2, operation):
+    num1= float(input("Enter the first number:"))
+    num2= float(input("Enter the second number:"))
+    operation=input("Enter operation (add, subtract, multiply, divide):").strip.lower()
     
     if operation == 'add':
         return num1 + num2
